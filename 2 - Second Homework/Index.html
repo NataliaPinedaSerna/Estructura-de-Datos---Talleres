@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Cambia el idioma a español -->
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/Style.css">
+
+    <!-- Antes de cerrar el cuerpo, importamos la librería de JavaScript JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <title> Second Homework </title>
+</head>
+
+    
+<body>
+    <div class="container section">
+        
+        <!-- PRIMERA SECCIÓN : BARRA DE NAVEGACIÓN CON ÍCONOS Y COLOR PERSONALIZADO -->
+        <div class="row">
+            <nav class="#4a148c purple darken-4">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">
+                    <img src="IMG/ICONS/Bars Graphic.png" width="60" height="auto">
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+                        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+                        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+                        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- SEGUNDA SECCIÓN : FORMULARIO -->
+        <div class="section">
+            <div class="row">
+
+                <!-- Solicitar nombre -->
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">face</i>
+                    <input type="text" name="userName" id="userName" class="icon-prefix validate">
+                    <label for="userName"> Escriba el Nombre de Usuario </label>
+                </div>
+            
+                <!-- Lista desplegable -->
+                <div class="input-field col s6">
+                    <select name="imgSelect" id="imgSelect" class="browser-default">
+                        <option value="" disabled selected> Seleccione una Colección de Imágenes </option>
+                        <option value="1"> Miembros de la Familia </option>
+                        <option value="2"> Animales Salvajes </option>
+                        <option value="3"> Números </option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TERCERA SECCIÓN : CHECKBOX -->
+        <div class="section">
+            <div class="row">
+
+                <div class="col s2">
+                    <label class="checkeable">                        
+                        <input type="checkbox" name="1" id="1">
+                        <img class="responsive-img circle" src="IMG/WILD LIFE COLLECTION/1-Urchin.png" alt="">
+                    </label>
+                </div>
+
+                
+                <div class="col s2">
+                    <label class="checkeable">
+                        <input type="checkbox" name="2" id="2">
+                        <img class="responsive-img circle" src="IMG/WILD LIFE COLLECTION/2-Lemur.png" alt="">
+                    </label>
+                </div>
+
+                <div class="col s2">
+                    <label class="checkeable">
+                        <input type="checkbox" name="3" id="3">
+                        <img class="responsive-img circle" src="IMG/WILD LIFE COLLECTION/3-Owl.png" alt="">
+                    </label>
+                </div>
+
+                <div class="col s2">
+                    <label class="checkeable">
+                        <input type="checkbox" name="4" id="4">
+                        <img class="responsive-img circle" src="IMG/WILD LIFE COLLECTION/4-Wairus.png" alt="">
+                    </label>
+                </div>
+
+                <div class="col s2">
+                    <label class="checkeable">
+                        <input type="checkbox" name="5" id="5">
+                        <img class="responsive-img circle" src="IMG/WILD LIFE COLLECTION/5-Camel.png" alt="">
+                    </label>
+                </div>
+
+                <div class="col s2">
+                    <label class="checkeable">
+                        <input type="checkbox" name="6" id="6">
+                        <img class="responsive-img circle" src="IMG/WILD LIFE COLLECTION/6-Hippopotamus.png" alt="">
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CUARTA SECCIÓN : ORDENAMIENTOS -->
+        <div class="section">
+            <div class="row center">
+
+                <!-- Lista desplegable -->
+                <div class="input-field col s8">
+                    <select name="orderingSelected" id="orderingSelected" class="browser-default">
+                        <option value="" disabled selected> Seleccione una Opción de Ordenamiento </option>
+                        <option value="1"> Ordenamiento Burbuja </option>
+                        <option value="2"> Ordenamiento de Selección </option>
+                        <option value="3"> Ordenamiendo de Inserción </option>
+                    </select>
+                </div> 
+
+                <!-- Seleccionar el sentido del ordenamiento -->
+                <div class="col s4">
+                    <label> Seleccione la Dirección del Ordenamiento </label> 
+                    <br> <br>
+
+                        <label>
+                            <input name="group1" type="radio" checked />
+                            <span> Ascendente &emsp; </span>
+                        </label>
+    
+                        <label>
+                            <input name="group1" type="radio" checked />
+                            <span> Descendente &emsp; </span>
+                        </label>
+                        
+                </div>
+
+            </div>
+        </div>
+
+        <!-- QUINTA SECCIÓN : BOTÓN -->
+        <div class="section">
+            <div class="row center">
+                    <button onclick="callAllOrdering()" class="btn waves-effect waves-light #4a148c purple darken-4" id="accept" name="accept"> Aceptar
+                    <i class="material-icons right"> send </i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="JS/Capture Values.js"></script>
+    <script src="JS/Images Collections.js"></script>
+    <script src="JS/Ordering Images.js"></script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+
+<!-- Código JQUERY -->
+<script type="text/javascript">
+    /* El método valida si ya se cargo todo el DOM de una web */
+    $(document).ready(function() {
+        /* Busca el elemento cuyo metadato coincida con el nombre '#enviar' 
+         coincide el elemento button y se le llama el método click()*/
+        $('#accept').click(function() {
+            let arraySelected = new Array();
+            $('#formid input[type = checkbox]').each(function() {
+                if (this.checked) {
+                    arraySelected.push($(this).val());
+                }
+            });
+            /* Finaliza el método que recorre los elementos del mismo tipo each */
+            if (arraySelected.length != 0)
+                alert('Imagenes almacenadas en el array: ' + arraySelected);
+            else
+                alert('No ha seleccionado imagenes');
+            return false;
+        });
+    });
+</script>
+<!-- Código JQUERY -->
+<!-- <script type="text/javascript">
+    /* El método valida si ya se cargó todo el DOM de una web */
+    $(document).ready(function() {
+        /* Busca si el elemento cuyo metadato coincida con el nombre "#enviar" coincide el elemento button y se llama el método click */
+        $('#accept').click(function(){
+            let selected = '';
+            $('#formid input[type = checkbox]').each(function(){
+                if (this.checked) {
+                    /* Recupera el value del checbox seleccionado y lo almacena en el string selected */
+                    arraySelected.push($(this).val());
+                    selected += $(this).val() + '  ';
+                    alert('checked');
+                }
+            });
+            /* Finaliza el método each que recorre los elementos del mismo tipo */
+
+            if (selected != '') {
+                alert('El usuario seleccionó las imágenes: ' + selected);}
+            else {
+                alert('El usuario no ha seleccionado ninguna imagen');
+                return false; }
+        });
+    });
+</script> -->
+    
+</html>
